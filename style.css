@@ -200,6 +200,11 @@ nav ul{
     background-color: var(--white);
     flex-grow: 1;
     width: 30%;
+    overflow: hidden;
+}
+
+.learning-card:hover{
+    box-shadow: 10px 10px 10px rgba(0 , 0, 0, 0.1);
 }
 
 .learning-pic{
