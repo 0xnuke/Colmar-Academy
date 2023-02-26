@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'roboto', arial, helvetica, sans-serif;
+    color: var(--dark-grey);
+}
+
+a{
+    color: var(--dark-grey);
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+:root{
+    --white: #FFFFFF;
+    /*banner*/
+    --grey: #D8D8D8;
+    --dark-grey: #4A4A4A;
+    --light-grey: #EAEBEC;
+    --font-grey: #9B9B9B;
+    --blue: #5193E3;
+}
+
+li{
+    list-style: none;
+}
+
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 24px;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+
+.logo >span{
+    text-transform: uppercase;
+}
+
+.logo :nth-child(3){
+    font-weight: 300;
+    color: var(--font-grey);
+}
+
+nav ul{
+    display: flex;
+    gap: 16px;
+}
+
+/* banner */
+
+.banner{
+    width: 100%;
+    background-color: var(--grey);
+    display: flex;
+}
+
+.banner-left{
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.banner-left img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-right button{
+    background-color: var(--dark-grey);
+    padding: 8px 0;
+    width: 100%;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* sub-banner */
+
+.sub-banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-banner-left{
+    padding: 32px 24px;
+    border-right: solid 1px var(--grey);
+    width: 60%;
+}
+.sub-banner-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.sub-banner-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-banner-text >h1{
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.sub-banner >span{
+    
+}
+
+.sub-banner-right{
+    width: 40%;
+}
+.sub-banner-box{
+    display: flex;
+    padding-top: 16px;
+}
+
+.sub-banner-right-img{
+    padding-top: 16px;
+    padding-left: 16px;
+    width: 35%;
+    height: auto;
+}
+
+.sub-banner-right-img{
+    width: 100%;
+    height: 100%;
+}
+.sub-banner-right-text{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.sub-banner-right-text >p{
+    font-weight: 100;
+}
+
+.sub-banner-right-text >a{
+    font-weight: 300;
+    color: var(--blue);
+}
